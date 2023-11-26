@@ -1,0 +1,8 @@
+= Algorithm Club
+:description: Exploring the idea of a lunchtime algorithm club, comparing implementations of common algorithms.
+
+Some sketches to see if there is value in comparing oo or procedural implementations of common algorithms with funcional ones,
+and/or diving into implementation efficiency.
+
+Format -- a lunchtime meet-up for the office.
+One algorithm per session.
