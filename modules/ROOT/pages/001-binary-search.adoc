@@ -1,0 +1,38 @@
+= Binary Search
+
+
+
+Where else would we start?
+
+
+== Java
+
+
+Standard, as taught to students everywhere:
+
+[source,java]
+----
+include:example$java/BinarySearch.java
+----
+
+*Thanks, Sedgewick & Wayne.
+
+
+
+== Functional Programming
+
+Random SO Lisp example for now:
+
+[source,lisp]y
+----
+(defun bin-search (vec fpred &aux (l (length vec)))
+  (labels ((bin-search-aux (l m)
+             (case (funcall fpred (aref vec m))
+               (-1 (bin-search-aux l (+ l (floor (- m l) 2))))
+               ( 0 m)
+               ( 1 (bin-search-aux m (+ m (floor (- m l) 2)))))))
+    (bin-search-aux 0 (floor l 2)))))
+----
+
+TODO: step through Haskell versions.
+
